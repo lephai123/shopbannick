@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 1260px;
+            height: auto;
+            margin: auto;   
+        }
+        header ul li{
+            float: left;
+            font-size: 20px;
+            margin-top: 30px;
+            list-style: none;
+            padding-left: 50px;
+        }
+        header a{
+            text-decoration: none;
+            color: black;
+        }
+        header ul a:hover{          
+            display: block;
+            color: rgb(245, 131, 38);
+            font-weight: bolder;
+
+        }
+        .btn{
+            width: 150px;
+            height: 30px;   
+            border: 1px solid black;
+            float: left;
+            margin-left: 40px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 30px;
+            font-size: large;
+            margin-top: 25px;           
+        }
+        nav{
+            height: 220px;
+            background-color: rgb(238, 235, 235);
+            border-radius: 10px;
+            margin-top: -10px;
+        }
+        nav li{
+            margin-top: 10px;
+        }
+        .nhap a:hover{
+            color: #ffff;
+            background-color: rgb(59, 50, 50);
+        }
+       
+       
+        footer{
+            clear: both;
+            height: 220px;
+            background-color: rgb(238, 235, 235);
+            position: relative;
+            top: 30px;           
+        }
+        footer p{
+            margin-top: -13px;
+            margin-left:30px;
+        }
+        input {
+            width: 300px;
+            height: 26px;
+            border: 1px solid rgb(176, 176, 176);
+            margin-top: 10px;
+        }
+        select {
+            width: 305px;
+            height: 30px;
+            margin-top: 10px;
+            border: 1px solid gray;
+        }
+        form{
+            border: 1px solid gray;
+            border-radius: 10px;
+            width: 500px;
+            height: 350px;
+            margin: auto auto;
+            box-shadow: 5px 5px gray;
+        }
+        aside{
+            background-color: aqua;
+            height: 30px;
+            border-radius: 5px;
+            line-height: 30px;
+        }
+        article{
+            min-height: 300px;
+            background-color: aliceblue;
+        }
+    </style>
+    <script>
+       
+        function dangki(){
+            alert('Web đang cải thiện mong bạn quay lại sau!!!');
+        }
+        function dangnhap(){
+            alert('Cũng chưa hoàn thành lên không đăng nhập được!')
+        }
+        function datmua(){
+            alert('Tài khoản đã được bán. Vui lòng chọn tài khoản khác.')
+        }
+        function xemct(){
+            alert('Tài khoản đã được bán.')
+        }
+       
+    </script>
+</head>
+<body>
+    <header>
+        <a href="https://www.facebook.com/lequocphai.2002"><img src="img/logosin.png" alt="logo" width="12%" style="float: left;"></a>
+        <div style="margin-left: 200px;"><ul>
+            <li>
+                <a href="index.html">TRANG CHỦ</a>
+            </li>
+            <li>
+                <a href="" onclick="dangki()">NẠP TIỀN</a>
+            </li>
+            <li>
+                <a href="" onclick="dangki()">TIN TỨC</a>
+            </li>
+            <li>
+                <a href="hotro.html">HỖ TRỢ</a>
+            </li>
+        </ul></div>
+        <div class="nhap">
+        <a href="" class="btn" onclick="dangki()">Đăng kí</a>
+        <a href="" class="btn" style="margin-left: 10px;" onclick="dangnhap()" >Đăng nhập</a>
+    </div>
+    </header>
+    <hr width="100%">
+    <marquee style="margin: 0px;"><h2><b>Shop</b> đang trong chương trình khuyến mại giảm giá <b>50%</b> khi mua account từ ngày: <b>01/05/2022 - 28/06/2022</b></h2></marquee>
+
+    <hr>
+        <form action="" align="center">
+            <label for="" style="font-size: 20px;font-weight: bold;padding-top: 150px;">Nhập đầy đủ thông tin để được hỗ trợ</label>
+             <input type="text" name="" id="name" placeholder="Họ và tên..." required>
+             <br>
+             <input type="text" name="" id="sdt" required placeholder="Số điện thoại...">
+             <br>
+             <input type="email" name="" id="email" required placeholder="Email...">
+             <br>
+             <select name="" id="">
+                 <option value="">Câu hỏi thường gặp</option>
+                 <option value="">1.Báo lỗi nạp tiền</option>
+                 <option value="">2.Báo lỗi mua account</option>
+                 <option value="">3.Báo lỗi đăng nhập</option>
+             </select>
+             <br>
+             <textarea name="" id="" cols="38" rows="6" required placeholder="Mô tả chi tiết.." style="margin-top: 10px;
+             "></textarea>
+             <br>
+             <button style="width: 150px;height: 30px;" >Submit</button>
+        </form>
+        <br>
+        <aside><b style="margin-left: 20px;">Hỗ trợ mua account</b></aside>
+        <article>
+          <div>B1: Truy cập vào trang web</div>
+           
+           <ul>
+               <li>Bấm " Đăng Nhập " nếu đã có sẵn tài khoản. Hoặc bạn có thể bấm vào nút " Đăng Ký Tài Khoản - Shopas.vn Shop Bán Nick FF , Thử May Giá Rẻ " tài khoản ở góc bên phải trên cùng màn hình của bạn để đăng ký tài khoản mới. Đối với những tài khoản lần đầu đăng ký khi đến với Shopas - as mobile Bạn cần điền các thông tin cần thiết như:</li>
+               <li>Tên tài khoản </li>
+               <li>Mật Khẩu (Lưu ý: Để có độ bảo mật tốt nhất hãy đặt mật khẩu phải từ 6 ký tự trở lên và bao gồm cả Chữ hoa, Chữ thường và Con số.)</li>
+               <li>Xác nhận mật khẩu</li>
+           </ul>
+           <div>B2: Nạp tiền: Để có thể mua Nick FF Giá Rẻ  tại shop hay sử dụng những tính năng thử vận may khác đang có trên shop. Bạn cần phải nạp tiền vào shop.</div>
+            <ul>
+                <li>Để nạp tiền vào shopas bạn nhấn vào phần Nạp Thẻ ở trang chủ của shop. Hoặc nhấn vào thanh menu (có 3 dấu gạch ngang). Lúc này bạn sẽ thấy phần " Nạp Thẻ "  hãy nhấn vào đó.</li>
+                <li>Tại đây bạn chọn và điền đầy đủ các thông tin như: Nhà mạng.</li>
+
+                <li>Mệnh giá thẻ (Lưu ý: Bạn cần phải chọn đúng mệnh giá thẻ khi nạp. Nếu sai sẽ bị mất thẻ).</li>
+
+                <li>Mã số thẻ. - Seri thẻ.</li>
+
+                <li>Đặc biệt tri ân các khách hàng thân yêu của shopas - Khi nạp tiền trên shop sẽ được tặng 100% giá trị the nạp áp dụng cho mọi mệnh giá điều này chưa từng có tại một shop bán nick ff nào trên Việt Nam - Khi bạn nạp 100k bạn sẽ nhận nay 200k trong tài khoản tương đương với km 100% giá trị thẻ nạp </li>
+                <li>Nắm bắt được tâm lý muốn có nick ff giá rẻ để chơi game shopas đã dành ưu đãi cực sốc cho fan tri ân quãng thời gian khách hàng ủng hộ thời gian hiện tại và mong sẽ được khách hàng ủng hộ nhiều hơn trong thời gian tới </li>
+
+            </ul>
+            <div>B3: Tiến hành chọn nick </div>
+            <ul>
+                <li>Khi đã hoàn thành nạp thẻ bạn kéo xuống bên dưới trang chủ của shop. Bạn nhấn vào mục Nick Free Fire Vip tại shopas mobile và tìm ngay cho mình một acc nick free fire giá rẻ phù hợp với nhu cầu hiện tại của bạn.</li>
+                <li>Không chỉ dừng lại ở những ưu đãi bên trên shopas còn tung ra km siêu sốc với chương trình khuyến mại cực sốc với phần quà là các mã giảm giá cực sôc tặng mã giảm giá khi mua nick lên tới 1.000.000 vnđ khi nạp thẻ hoặc chơi các trò thử may trên shop với mã   : SALE200K sau khi tìm được nick ưng ý trên shop chỉ cần nhập mã " SALE200K" và ấn thanh toán khách hàng sẽ được giảm ngay 200k - Nick 1.000.000 chỉ còn 800k quá sốc chỉ có riêng tại shopas của chúng tôi</li>
+                <li>Sau đó bấm thanh toán khi hoàn tất thanh toán tài khoản mật khẩu sẽ tự động hiện lên trên màn hình của bạn. Bạn cũng có thể vào thông tin cá nhân trên web. Vào mục tài khoản đã mua để xem lại thông tin tài khoản mật khẩu nick bạn đã mua nha. </li>
+                <li>Sau khi mua nick của bạn sẽ được bảo hành 1 đổi 1 trong 1 tuần đầu tiên - nếu có bất cứ vẫn đề tránh chấp nào về tài khoản sau khi mua của chúng tối bạn chỉ cần liên hệ cskh để được hỗ trợ kịp thời không làm gián đoạn thời gian trải nghiệm của khách hàng </li>
+                <li>Chúc bạn sớm chọn được một nick Free Fire giá rẻ phù hợp với nhu cầu sử dụng và có những giây phút tuyệt vời khi đến với shop của AS VN</li>
+                
+            </ul>
+        </article>
+
+
+    <footer>
+        <div align="center"c><h1 style="font-size:40px ;"><i>Lê Quốc Phái</i></h1>
+            <p style="font-size:30px;margin-top: -20px;"> Tự hào là shop game Việt Nam</p></div>
+        <div>
+           <p>Hotline: 0375616574</p>
+           <p>Email: phailqph20664@fpt.edu.vn</p>
+           <p>Facebook: <a href="https://www.facebook.com/lequocphai.2002/"  style="text-decoration: none; color: red;">lequocphai.</a></p>
+           <p>Địa chỉ: shopaccfirefreegiare.com</p>
+        </div>
+    </footer>
+</body>
+</html>
